@@ -1,0 +1,36 @@
+Configuration file: /Users/aurelianedor/SITES/digitable/_config.yml
+            Source: /Users/aurelianedor/SITES/digitable
+       Destination: /Users/aurelianedor/SITES/digitable/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.113 seconds.
+ Auto-regeneration: enabled for '/Users/aurelianedor/SITES/digitable'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+[2022-05-25 12:42:27] ERROR `/assets/css/variables.scss' not found.
+[2022-05-25 12:42:30] ERROR `/assets/css/variables.scss' not found.
+[2022-05-25 12:42:34] ERROR `/assets/css/variables.scss' not found.
+      Regenerating: 17 file(s) changed at 2022-05-25 12:43:13
+                    _includes/sections/table.html
+                    _includes/components/table.html
+                    _includes/components/bandeaux.html
+                    _includes/components/navBarTable.html
+                    _includes/components/hNavBar.html
+                    _years/2022/publics.html
+                    _years/2022/espaces.html
+                    _years/2022/index.html
+                    _years/2022/innovation.html
+                    _years/2022/donnees.html
+                    _layouts/default.html
+                    _pages/index.html
+                    _sass/components/table.scss
+                    jekyll.log
+                    assets/imgs/poster_table4_v6.png
+                    assets/js/scroll.js
+                    assets/js/application.js
+                    ...done in 0.106194 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2022-05-25 12:43:13
+                    jekyll.log
+                    ...done in 0.047293 seconds.
+                    

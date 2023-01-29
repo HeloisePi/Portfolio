@@ -1,0 +1,35 @@
+/* Colors */
+
+$black : #181818;
+$white : #FFFFFF;
+$blue: #54EBFF;
+$darkBlue: #2230B1;
+$green : #00D079;
+$orange: #FFB13D;
+$pink : #FF00F5;
+
+/* Typography */
+
+/* Font size */
+$fsTitle: 4rem;
+$fsSsTitle: 2.125rem;
+$fsText: 1.125rem;
+
+/* Font Family */
+
+@font-face {
+  font-family: 'FuturaPTHeavy';
+  src: url(../../assets/fonts/FuturaPTHeavy.otf);
+}
+@font-face {
+  font-family: 'GloriaHallelujah';
+  src: url(../../assets/fonts/GloriaHallelujah-Regular.ttf);
+}
+@font-face {
+  font-family: 'GothamLight';
+  src: url(../../assets/fonts/Gotham-Light.otf);
+}
+
+$ffFutura: 'FuturaPTheavy';
+$ffGotham: 'GothamLight';
+$ffGloria: 'GloriaHallelujah';

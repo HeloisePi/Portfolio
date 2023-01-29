@@ -1,0 +1,47 @@
+url: "https://heloisepingitore.fr/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "héloïse Pingitore" # the name of your site, e.g. ACME Corp.
+lang: "fr"
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      permalink: /:slug
+      layout: "default"
+  - scope:
+      path: "_developpement"
+      type: "developpement"
+    values:
+      layout: "project"
+
+  - scope:
+      path: "_dessins"
+      type: "dessins"
+    values:
+      layout: "dessin"
+
+  - scope:
+      path: "_photos-videos"
+      type: "photos-videos"
+    values:
+      layout: "project"
+
+collections:
+  pages:
+    output: true
+
+  developpement:
+    output: true
+    permalink: /developpement/:title
+
+  dessins:
+    output: true
+    permalink: /dessins/:title
+
+  photos-videos:
+    output: true
+    permalink: /photos-videos/:title
+
+disable_disk_cache: true
