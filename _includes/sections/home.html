@@ -5,7 +5,7 @@
   <div class="grid gridProjects">
 
     <h2 class="ffFutura">Here is a list of my projects</h2>
-    {% for project in site.projects %}
+    {% for project in site.developpement %}
       {% assign slug = project.title | slugify: 'latin' %}
       <div class="projectContainer">
         <h3 class="ffGotham">{{project.title}}</h3>

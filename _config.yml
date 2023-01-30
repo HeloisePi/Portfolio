@@ -1,6 +1,6 @@
 url: "https://heloisepingitore.fr/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "héloïse Pingitore" # the name of your site, e.g. ACME Corp.
+title: "Héloïse Pingitore" # the name of your site, e.g. ACME Corp.
 lang: "fr"
 
 defaults:
