@@ -1,5 +1,26 @@
 .header {
   width: 100vw;
-  padding: 1rem 0;
+  padding:  0;
   text-align: center;
+
+  background-color: $main;
+  .contenant-header{
+    display: flex;
+    justify-content:row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .logo{
+    min-width: 67px;
+    height: 67px;
+    background-color: darkgrey;
+  }
+
+  p{
+    font-family: $fflouis;
+    color: black;
+  }
+
+
 }

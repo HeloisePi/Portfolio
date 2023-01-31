@@ -7,6 +7,7 @@ $darkBlue: #2230B1;
 $green : #00D079;
 $orange: #FFB13D;
 $pink : #FF00F5;
+$main : #FFAD9B;
 
 /* Typography */
 
@@ -18,18 +19,10 @@ $fsText: 1.125rem;
 /* Font Family */
 
 @font-face {
-  font-family: 'FuturaPTHeavy';
-  src: url(../../assets/fonts/FuturaPTHeavy.otf);
-}
-@font-face {
-  font-family: 'GloriaHallelujah';
-  src: url(../../assets/fonts/GloriaHallelujah-Regular.ttf);
-}
-@font-face {
-  font-family: 'GothamLight';
-  src: url(../../assets/fonts/Gotham-Light.otf);
+  font-family: 'louis';
+  src: url(../../assets/fonts/louis.ttf);
 }
 
-$ffFutura: 'FuturaPTheavy';
-$ffGotham: 'GothamLight';
-$ffGloria: 'GloriaHallelujah';
+
+$fflouis: 'louis';
+
