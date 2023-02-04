@@ -23,6 +23,16 @@ $fsText: 1.125rem;
   src: url(../../assets/fonts/louis.ttf);
 }
 
+@font-face {
+  font-family: 'Gilbert';
+  src: url(/assets/fonts/Gilbert.ttf);
+}
 
+@font-face {
+  font-family: 'Martine';
+  src: url(/assets/fonts/Martine.ttf);
+}
+$ffgilbert : 'Gilbert';
 $fflouis: 'louis';
+$ffmartine: 'Martine';
 

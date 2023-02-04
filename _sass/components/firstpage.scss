@@ -1,5 +1,6 @@
 .hero{
     background-color: $main;
+    padding-top: 80px;
 }
 .firstpage{
     margin: 0 auto;
@@ -11,6 +12,9 @@
         height: 579px;
         padding: 0 10px;
         position: relative;
+        .descriptionimage{
+            font-family: $fflouis;
+        }
         .imageContainer {
             position: relative;
             overflow: hidden;
@@ -19,6 +23,11 @@
                 
                 position: absolute;
                 inset: 0;
+                
+            }
+
+            .layertop{
+                z-index: 1;
             }
         
 
@@ -37,7 +46,66 @@
         
         
         }
+        .port ,.folio{
+            font-size: 100px;
+            font-family: $ffgilbert;
+            position: absolute;
+            top: 140px;
+            left: -44px;
+            z-index: 0;
+        }
+        .folio{
+            left: 394px;
+        }
         
 
+    }
+    .nom{
+        font-family: $ffmartine;
+        font-size: 100px;
+        white-space: nowrap;
+        transform: translate(0, -28%);
+    }
+}
+
+.section-propos{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4%;
+    
+    .surligne{
+        position: absolute;
+        background-color: $main;
+        width: 148px;
+        height: 17px;
+        transform: translateY(17px);
+        z-index: -1;
+    }
+
+    .propos-titre{
+        font-size: 35px;
+        font-family: $ffgilbert;
+
+    }
+
+    .propos{
+        margin-top: 40px;
+        font-size: 20px;
+        font-family: $fflouis;
+        width: 50vw;
+
+    }
+    .logo-language{
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        gap: 2%;
+        img{
+            width: auto;
+            height: 40px;
+            
+        }
     }
 }
