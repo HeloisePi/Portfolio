@@ -74,6 +74,11 @@
     flex-direction: column;
     align-items: center;
     gap: 4%;
+
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr ;
+    }
     
     .surligne{
         position: absolute;
@@ -84,11 +89,7 @@
         z-index: -1;
     }
 
-    .propos-titre{
-        font-size: 35px;
-        font-family: $ffgilbert;
 
-    }
 
     .propos{
         margin-top: 40px;
@@ -110,9 +111,70 @@
     }
 }
 
-.carousel-dev{
-    .carousel-item{
+section.carousel{
+    text-align: center;
+    margin-top: 270px;
+    .titre{
+        position: relative;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
+    .surligne{
+        display: block;
+        top: 0;
+
+        width: 251px;
+        height: 18px;
+        background-color: $main;
+        position: absolute;
+        transform: translateY(17px);
+        z-index: -1;
+    }
+    .carousel {
+        margin-top: 180px;
+    }
+    .rangement{
+        display: flex;
+        justify-content: space-evenly;
+        
+
+        & > div{
+            width: 25vw;
+            
+            border: 1px solid;
+            border-color: $main;
+        }
+        .image-project{
+            width: 93%;
+           
+        }
+        h3{
+            font-size: 32px;
+            font-family: $fflouis;
+        }
+        .logo-dev{
+            height: 30px;
+            
+        }
+        .espacement{
+            
+            display: flex;
+            justify-content: space-around;
+            min-height: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    button{
+        display: none;
+    }
+
+}
+
+h2{
+    font-size: 35px;
+    font-family: $ffgilbert;
+
+
 }
