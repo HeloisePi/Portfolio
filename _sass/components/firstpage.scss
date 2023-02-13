@@ -146,23 +146,36 @@ section.carousel{
         }
         .image-project{
             width: 93%;
+            margin-top: 10px;
            
         }
         h3{
-            font-size: 32px;
+            font-size: 20px;
             font-family: $fflouis;
         }
         .logo-dev{
             height: 30px;
+
             
         }
         .espacement{
             
+            gap: 10px;
+
             display: flex;
             justify-content: space-around;
             min-height: 100%;
             flex-direction: column;
             align-items: center;
+        }
+        a{
+            color: rgb(0, 0, 0);
+        }
+        .sous-ligne{
+            height: 1px;
+            width: 90px;
+            background-color: $main;
+            margin-bottom: 10px;
         }
     }
 
@@ -178,3 +191,18 @@ h2{
 
 
 }
+
+p{
+    font-size: 20px;
+    font-family: $fflouis;
+}
+
+
+.carousel .titre .sur-vid{
+    width: 450px;
+}
+
+.carousel .titre .sur-gra{
+    width: 200px;
+}
+
