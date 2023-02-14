@@ -1,5 +1,58 @@
-.projectContainer {
-  background-color: aqua;
-  width: fit-content;
-  padding: 2rem;
+.monPreSite{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+  h1{
+    font-size: 30px;
+    font-family: $ffgilbert;
+    position: relative;
+
+  }
+  .surligne{
+    position: absolute;
+    width: 330px;
+    height: 15px;
+    background-color: $main;
+    transform: translateY(94%);
+    z-index: -1;
+  }
+  a{
+    font-size: 20px;
+    font-family: $fflouis;
+    color: black;
+    text-decoration: underline;
+
+  }
+  p{
+    width: 60vw;
+  }
+
+}
+
+
+.under-motion{
+  width: 200px;
+  position: absolute;
+
+  height: 15px;
+  background-color: $main;
+  transform: translateY(94%);
+  z-index: -1;
+}
+
+
+.section-photo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+  h1{
+    font-size: 30px;
+    font-family: $ffgilbert;
+    position: relative;
+    margin-bottom: 40px;
+  }
 }

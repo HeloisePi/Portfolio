@@ -1,0 +1,56 @@
+.file-ariane{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    border: 1px $main solid;
+    height: 7vh ;
+    h5{
+
+        font-size: 20px;
+        font-family: $fflouis;
+    }
+    a{
+        color: black;
+
+    }
+}
+
+.section-contact{
+    .titre-contact{
+        margin-top: 130px;
+        text-align: center;
+        font-size: 30px;
+        font-family: $ffgilbert;
+    }
+    
+    .description-contact{
+        margin:  30px auto;
+        width: 50vw;
+    }
+    
+    .placement-logo{
+        margin-top: 30px ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20vw;
+        .linkedin-contact, .github-contact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            
+        }
+        img{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    a{
+        color: black;
+        text-decoration: underline ;
+    }
+
+}    
+
