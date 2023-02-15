@@ -34,8 +34,9 @@
         }
         .ligne1{
             position: absolute;
-            top: 18%;
+            top: 20%;
             left: 0;
+            height: 33%;
             transform: translateX(calc(-100% + 2px ))
         }
         .ligne2{
@@ -67,6 +68,87 @@
         transform: translate(0, -28%);
     }
 }
+
+
+@media screen and (max-width : 800px) {
+    .firstpage .cadre-image .imageContainer .MainPhoto {
+        width: 98%;
+    
+    }
+
+    .firstpage .cadre-image {
+        width: 65vw;
+        height: 65vw;
+        margin: 0 auto;
+
+    }
+    .firstpage .descriptionimage{
+        font-size: 14px;
+    
+    }
+    .firstpage .nom{
+        font-size: 70px;
+    }
+    .firstpage .cadre-image .port, .firstpage .cadre-image .folio{
+        font-size: 70px;
+        top: 27%;
+        left: -4%;
+    }
+    .firstpage .cadre-image .folio{
+        left: 68%!important;
+    }
+    
+}
+
+@media screen and (max-width : 700px) {
+    .firstpage .cadre-image .port, .firstpage .cadre-image .folio{
+        font-size: 60px;
+        top: 27%;
+        left: -4%;
+    }
+
+}
+
+@media screen and (max-width : 600px) {
+    .firstpage .cadre-image .port, .firstpage .cadre-image .folio{
+        font-size: 50px;
+        top: 27%;
+        left: -4%;
+    }
+}
+
+
+@media screen and (max-width : 500px) {
+    .firstpage .nom{
+        font-size: 50px;
+    }
+    .firstpage .cadre-image .port, .firstpage .cadre-image .folio{
+        font-size: 50px;
+        top: 22%;
+        left: -9%;
+    }
+}
+
+
+
+@media screen and (max-width : 480px) {
+    .firstpage .descriptionimage{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .firstpage .cadre-image .port, .firstpage .cadre-image .folio{
+        font-size: 40px;
+        top: 23%;
+        left: -9%;
+    }
+}
+
+
+
+
+
 
 .section-propos{
     margin-top: 100px;
