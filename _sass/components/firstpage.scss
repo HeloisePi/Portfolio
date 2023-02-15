@@ -108,7 +108,27 @@
             height: 40px;
             
         }
+        
     }
+}
+@media screen and (max-width:420px) {
+    .section-propos .logo-language img {
+        height: 30px;
+    }
+
+    
+}
+@media screen and (max-width:500px) {
+    .section-propos .propos {
+        width: 80vw;
+    }
+    .section-propos .surligne{
+        width: 110px;
+        height: 11px;
+        transform: translateY(13px);
+    }
+    
+    
 }
 
 section.carousel{
@@ -206,3 +226,20 @@ p{
     width: 200px;
 }
 
+@media screen and (max-width:500px) {
+    h2{
+        font-size: 25px;
+    }
+    section.carousel .surligne{
+        width: 181px;
+        height: 11px;
+        transform: translateY(13px);
+    }
+    .carousel .titre .sur-vid{
+        width: 310px;
+    }
+    .carousel .titre .sur-gra{
+        width: 140px;
+    }
+    
+}

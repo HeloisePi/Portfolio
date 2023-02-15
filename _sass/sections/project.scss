@@ -57,9 +57,28 @@
   }
 }
 
-
+.rangement-photo{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
 
 .center{
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .monPreSite img, .section-photo img{
+    width: 80%;
+  }
+  
+}
+
+@media screen and (max-width: 1160px) {
+  .rangement-photo{
+    flex-direction: column;
+    align-items: center;
+  }
 }

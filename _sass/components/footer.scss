@@ -6,7 +6,11 @@
     
     justify-content: center;
     gap: 10%;
-    height: 310px;
+    height: auto;
+    padding-bottom: 20px;
+    
+
+
     .div-contact ,.div-proj,.div-leg {
         margin-top: 5%;
         display: flex;
@@ -26,4 +30,23 @@
         
     }
 
+}
+
+@media screen and (max-width: 910px){
+    .fond-footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+
+    }
+    .div-contact ,.div-proj,.div-leg {
+        margin-left: 30px;
+        margin-top: 10px;
+
+
+        p{
+            font-size: 16px;
+        }
+    }
 }

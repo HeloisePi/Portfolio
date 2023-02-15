@@ -7,7 +7,7 @@ outil: After Effects, Premier Pro, Media encoder
     <h5><a href="./../index.html">page-principal </a>> Motion Design</h5>
 </section>
 
-<section class = "monPreSite">
+<section class = "monPreSite section-motion-design">
     <h1>Motion Design</h1>
     <div class="under-motion"></div>
     <img src="/assets/photo/vid-pho/motiondesign2.png" alt="Exemple">
