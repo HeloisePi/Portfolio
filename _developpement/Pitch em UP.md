@@ -1,6 +1,5 @@
 ---
 title: Pitch em UP
-description: this is the project description
 image-url: "/assets/photo/dev/pitchem.PNG"
 logos: 
     - logo : 
@@ -8,4 +7,45 @@ logos:
         alt: scrath
 
 ---
-    hohohjohohooho
+<section class="file-ariane">
+    <h5><a href="./../index.html">page-principal </a>> Pitch em UP</h5>
+</section>
+
+
+
+
+
+
+<section class = "section-photo">
+    <h1>Pitch em UP</h1>
+    <div class="under-motion"></div>
+    <p>J’ai eu l’occasion de coder un jeu vidéo avec scratch, lors d’un travail de groupe à 4. On avait pour consigne de programmer un jeu avec le thème du temps, et qui pourrait amuser toute tranche d’âge.<p>
+
+
+<section class="">
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner center">
+    <div class="carousel-item active ">
+      <img src="/assets/photo/dev/pitch'em up 1.png" class="img-pitch" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/photo/dev/3 3334.png" class="img-pitch" alt="" >
+    </div>
+    <div class="carousel-item">
+      <img src="/assets/photo/dev/2 224.png" class="img-pitch" alt="">
+    </div>
+        <div class="carousel-item">
+      <<img src="/assets/photo/dev/4 1.png" class="img-pitch" alt="">>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <img src="/assets/arrow/back.svg" alt="">
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <img src="/assets/arrow/next.svg" alt="">
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+{% include sections/footer.html %}

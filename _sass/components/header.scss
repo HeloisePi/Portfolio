@@ -1,20 +1,32 @@
 .header {
+  z-index: 6;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  
   width: 100vw;
   padding:  0;
   text-align: center;
 
+  display: flex;
+  justify-content:row;
+  justify-content: space-between;
+  align-items: center;
+
   background-color: $main;
-  .contenant-header{
+  .contenantheader{
     display: flex;
     justify-content:row;
     justify-content: space-between;
     align-items: center;
-
+    margin-right: 5vw;
   }
   .logo{
     min-width: 67px;
     height: 67px;
     background-color: darkgrey;
+    margin-left: 5vw;
+
   }
 
   p{
@@ -22,5 +34,47 @@
     color: black;
   }
 
+  .menu{
+    display: none;
+    margin-right: 20px;
+  }
 
+  
+  @media screen and (max-width:930px){
+    .header{
+      position: fixed;
+      height: 20px;
+    }
+    .contenantheader{
+      position: absolute;
+      margin-left: -100%;
+      flex-direction: column;
+      background-color: white;
+      width: 100vw;
+      height: 100vh;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      justify-content: center;
+      overflow-y: hidden;
+      overflow-x: hidden;
+      transition: 300ms;
+    }
+    a{
+      margin: 5%;
+      
+    }
+    p{
+      font-size: 25px;
+    }
+    .menu{
+      display: block;
+      z-index: 6;
+    }
+  }
+}
+
+
+.contenantheader.mobile-menu{
+  margin-left: 0;
 }

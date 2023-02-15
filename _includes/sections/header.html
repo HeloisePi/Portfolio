@@ -1,10 +1,10 @@
 <header class="header ffGotham bgBlack txtWhite">
-  <div class="container contenant-header">
-    <div class="logo"></div>
+  <div class="logo"></div>
+  <div class="container contenantheader">
     <a href="/#Développement ">
       <p class="developpements">Développements</p>
     </a>
-
+    
     <a href="/#Graphismes">
       <p class="graphismes">Graphismes</p>
     </a>
@@ -22,4 +22,16 @@
       <p class="contact">Contact</p>
     </a>
   </div>
+  <img src="/assets/burger/hamburger.svg" alt="Menu" class="menu">
 </header>
+
+<script>
+        const menu = document.querySelector(".menu")
+        const contenantheader = document.querySelector(".contenantheader")
+ 
+        menu.addEventListener('click',()=>{
+          contenantheader.classList.toggle('mobile-menu')
+        })
+
+</script>
+
