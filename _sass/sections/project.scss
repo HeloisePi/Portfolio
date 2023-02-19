@@ -82,3 +82,30 @@
     align-items: center;
   }
 }
+
+
+
+.section-dessin{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  .projet1, .projet2, .projet3{
+    width: 100vw;
+  }
+  h5{
+    font-size: 30px;
+    font-family: $ffgilbert;
+    position: relative;
+  }
+
+  p{
+    width: 50%;
+    
+  }
+  .section-dessin div{
+    display: flex;
+    justify-content: center;
+
+  }
+}
