@@ -106,6 +106,12 @@
   .section-dessin div{
     display: flex;
     justify-content: center;
+    
 
+  }
+  .center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }

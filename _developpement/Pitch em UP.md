@@ -14,8 +14,6 @@ logos:
 
 
 
-
-
 <section class = "section-photo">
     <h1>Pitch em UP</h1>
     <div class="under-motion"></div>
@@ -23,29 +21,30 @@ logos:
 
 
 <section class="">
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner center">
-    <div class="carousel-item active ">
-      <img src="/assets/photo/dev/pitch'em up 1.png" class="img-pitch" alt="">
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner center">
+      <div class="carousel-item active ">
+        <img src="/assets/photo/dev/pitch'em up 1.png" class="img-pitch" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/photo/dev/3 3334.png" class="img-pitch" alt="" >
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/photo/dev/2 224.png" class="img-pitch" alt="">
+      </div>
+          <div class="carousel-item">
+        <<img src="/assets/photo/dev/4 1.png" class="img-pitch" alt="">>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="/assets/photo/dev/3 3334.png" class="img-pitch" alt="" >
-    </div>
-    <div class="carousel-item">
-      <img src="/assets/photo/dev/2 224.png" class="img-pitch" alt="">
-    </div>
-        <div class="carousel-item">
-      <<img src="/assets/photo/dev/4 1.png" class="img-pitch" alt="">>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <img src="/assets/arrow/back.svg" alt="">
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <img src="/assets/arrow/next.svg" alt="">
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <img src="/assets/arrow/back.svg" alt="">
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <img src="/assets/arrow/next.svg" alt="">
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 </section>
+
 {% include sections/footer.html %}
