@@ -20,20 +20,28 @@ logos:
     <p>J’ai eu l’occasion de coder un jeu vidéo avec scratch, lors d’un travail de groupe à 4. On avait pour consigne de programmer un jeu avec le thème du temps, et qui pourrait amuser toute tranche d’âge.<p>
 
 
-<section class="">
+<section class="pitchSlider">
   <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner center">
+    <div class="carousel-inner">
       <div class="carousel-item active ">
-        <img src="/assets/photo/dev/pitch'em up 1.png" class="img-pitch" alt="">
+        <div class="imgContainer">
+          <img src="/assets/photo/dev/pitch'em up 1.png" class="img-pitch" alt="">
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="/assets/photo/dev/3 3334.png" class="img-pitch" alt="" >
+        <div class="imgContainer">
+          <img src="/assets/photo/dev/3 3334.png" class="img-pitch" alt="" >
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="/assets/photo/dev/2 224.png" class="img-pitch" alt="">
+        <div class="imgContainer">
+          <img src="/assets/photo/dev/2 224.png" class="img-pitch" alt="">
+        </div>
       </div>
-          <div class="carousel-item">
-        <<img src="/assets/photo/dev/4 1.png" class="img-pitch" alt="">>
+      <div class="carousel-item">
+        <div class="imgContainer">
+          <img src="/assets/photo/dev/4 1.png" class="img-pitch" alt="">
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

@@ -56,6 +56,17 @@
     margin-bottom: 40px;
   }
 }
+.pitchSlider {
+  width: 50%;
+  .imgContainer {
+    width: 50%;
+    margin: 0 auto;
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+}
 
 .rangement-photo{
   display: flex;
@@ -99,10 +110,12 @@
     position: relative;
   }
 
+  
   p{
-    width: 50%;
-    
+    width: auto;
   }
+    
+  
   .section-dessin div{
     display: flex;
     justify-content: center;
@@ -113,5 +126,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    p{
+      width: auto;
+      margin: 20px;
+      margin-left: 30px;
+    }
+
   }
 }
