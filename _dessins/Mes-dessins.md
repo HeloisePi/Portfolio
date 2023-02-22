@@ -12,7 +12,7 @@ image-url: "/assets/photo/dessin/cours.PNG"
     <div class="surligne"></div>
     <p class="description-global">Voici quelques créations graphiques que j’ai pu faire à travers différents projets de ma formation. <p>
     <div class="div-projet1 center">
-        <img src="/assets/photo/dessin/projet1.svg" class="projet1" alt="">
+        <img src="/assets/photo/dessin/projet1.png" class="projet1" alt="">
         <p class="description projet1">J’ai pu réaliser ses dessins, pour un projet de groupe dans le but, d’illustrer une histoire.</p>
     </div>
     <div class="div-projet2 center">
@@ -20,7 +20,7 @@ image-url: "/assets/photo/dessin/cours.PNG"
         <p class="description projet2">J’ai dessiné ce personnage parodiant Pitch de Super Mario Bros dans le but d’illustrer le personnage d’un jeu vidéo.</p>
     </div>
     <div class="div-projet3 center">
-        <img src="/assets/photo/dessin/projet3.svg" class="projet3" alt="">
+        <img src="/assets/photo/dessin/projet3.png" class="projet3" alt="">
         <p class="description projet3">Voici les dessins de mon premier projet MMI, où j’ai dû illustrer une camarade de classe.</p>
     </div>
     <div class="div-projet4 center">
