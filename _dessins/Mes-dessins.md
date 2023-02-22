@@ -24,11 +24,11 @@ image-url: "/assets/photo/dessin/cours.PNG"
         <p class="description projet3">Voici les dessins de mon premier projet MMI, où j’ai dû illustrer une camarade de classe.</p>
     </div>
     <div class="div-projet4 center">
-        <img src="/assets/photo/dessin/infographie.png" alt="">
+        <img src="/assets/photo/dessin/infographie.png" class="projet4" alt="">
         <p class="description projet3">Voici une infographie, réaliser en groupe de 3, pour illustrer un écosystème bordelais.</p>
     </div>
     <div class="div-projet5 center">
-        <img src="/assets/photo/dessin/stage.png" alt="">
+        <img src="/assets/photo/dessin/stage.png" class="projet5" alt="">
         <p class="description stage">Lors de mon stage de 3eme j’ai eu la chance de réaliser une affiche pour une vente de vin.</p>
     </div>
 

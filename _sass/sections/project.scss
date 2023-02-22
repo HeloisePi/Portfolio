@@ -49,6 +49,9 @@
   align-items: center;
   gap: 10px;
   margin-top: 70px;
+  p{
+    width: 70vw;
+  }
   h1{
     font-size: 30px;
     font-family: $ffgilbert;
@@ -100,9 +103,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+
+
   
-  .projet1, .projet2, .projet3{
+  .projet1, .projet2, .projet3, .projet4, .projet5{
     width: 100vw;
+    margin-top: 50px;
   }
   h5{
     font-size: 30px;
@@ -112,6 +118,7 @@
 
   
   p{
+    margin-left: 30px;
     width: auto;
   }
     
