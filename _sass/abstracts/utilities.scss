@@ -83,7 +83,12 @@
 }
 
 
-p::selection {
+::-moz-selection { 
   color: white;
-  background-color: $main;
+  background: $main;
+}
+
+::selection {
+  color: white;
+  background: $main;
 }
