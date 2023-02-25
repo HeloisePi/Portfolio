@@ -4,7 +4,7 @@ image-url: "/assets/photo/dessin/cours.PNG"
 ---
 
 <section class="file-ariane">
-    <h5><a href="./../index.html">page-principal </a>> Mes Dessins</h5>
+    <h5><a href="./../">page-principal </a>> Mes Dessins</h5>
 </section>
 
 <section class = "section-dessin ">

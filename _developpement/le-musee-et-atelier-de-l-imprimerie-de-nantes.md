@@ -11,7 +11,7 @@ logos:
 ---
 
 <section class="file-ariane">
-    <h5><a href="./../index.html">page-principal </a>> Le Musée et Atelier de L’imprimerie de Nantes</h5>
+    <h5><a href="./../">page-principal </a>> Le Musée et Atelier de L’imprimerie de Nantes</h5>
 </section>
 
 <section class = "monPreSite">
