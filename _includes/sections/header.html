@@ -34,9 +34,10 @@
         var a = document.querySelectorAll(".contenantheader a")
         console.log(a)
  
-        menu.addEventListener('click',()=>{
+        menu.addEventListener('click',(e)=>{
 
           contenantheader.classList.toggle('mobile-menu')
+          
         })
         a.forEach((elmt) => {
           elmt.addEventListener('click',()=>{
