@@ -1,27 +1,27 @@
 <header class="header ffGotham bgBlack txtWhite">
-  <a href="/">
+  <a href="/" >
     <img src="/assets/logo/logo.svg" class="logo" alt="logo">
   </a>
   
-  <div class="container contenantheader">
+  <div class="container contenantheader" >
     <a href="/#Développement ">
       <p class="developpements">Développements</p>
     </a>
     
-    <a href="/#Graphismes">
+    <a href="/#Graphismes" >
       <p class="graphismes">Graphismes</p>
     </a>
 
-    <a href="/#Mes-Vidéos-photographies">
+    <a href="/#Mes-Vidéos-photographies" >
       <p class="videos">Vidéos/Photographies</p>
     </a>
 
     
-    <a href="/assets/cv/cv.pdf">
+    <a href="/assets/cv/cv.pdf" >
       <p class="cv">CV</p>
     </a>
     
-    <a href="/contact">
+    <a href="/contact" >
       <p class="contact">Contact</p>
     </a>
   </div>
@@ -31,10 +31,22 @@
 <script>
         const menu = document.querySelector(".menu")
         const contenantheader = document.querySelector(".contenantheader")
+        var a = document.querySelectorAll(".contenantheader a")
+        console.log(a)
  
         menu.addEventListener('click',()=>{
+
           contenantheader.classList.toggle('mobile-menu')
         })
+        a.forEach((elmt) => {
+          elmt.addEventListener('click',()=>{
+            
+            contenantheader.classList.remove('mobile-menu')
+          })
+        })
+
+     
+      
 
 </script>
 
