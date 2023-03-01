@@ -4,7 +4,7 @@ title: Photographie
 outil: Photoshop, lightroom
 ---
 <section class="file-ariane">
-    <h5><a href="./../">page-principal </a>> Photographie</h5>
+    <h5><a href="./../">Page-Principale </a>> Photographie</h5>
 </section>
 
 <section class = "section-photo">

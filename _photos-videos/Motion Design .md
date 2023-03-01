@@ -4,7 +4,7 @@ title: Motion Design
 outil: After Effects, Premier Pro, Media encoder
 ---
 <section class="file-ariane">
-    <h5><a href="./../">page-principal </a>> Motion Design</h5>
+    <h5><a href="./../">Page-Principale </a>> Motion Design</h5>
 </section>
 
 <section class = "monPreSite ">
