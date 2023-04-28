@@ -4,181 +4,223 @@ permalink: "/"
 ---
 
 <main>
-    {% include sections/heroHome.html %}
-    <section class="section-propos">
+  {% include sections/heroHome.html %}
+  <section class="section-propos">
+    <div class="surligne"></div>
+    <h2 class="propos-titre">À propos</h2>
+
+    <p class="propos">
+      Depuis mon plus jeune âge je suis passionnée par la création, je découvre
+      cette année, les joies du développement web et de l'ui / ux. <br />
+
+      Je suis étudiante en But des Métiers du Multimédia et de l'Internet. Et je
+      recherche un stage, qui débuterait le 22 mai. Curieuse de découvrir de
+      nouvelles compétences, j'aimerais développer mes connaissances en
+      programmation front-end ou en ui/ux.
+    </p>
+
+    <div class="logo-language">
+      <img src="/svg/scratch-logo.svg" class="logoimg" alt="scratch" />
+      <img src="/svg/php-1.svg" class="logoimg" alt="php" />
+      <img src="/svg/python-5.svg" class="logoimg" alt="python" />
+      <img src="/svg/html-1.svg" class="logoimg" alt="html" />
+      <img src="/svg/css-3.svg" class="logoimg" alt="css" />
+      <img src="/svg/javascript-1.svg" class="logoimg" alt="javascript" />
+    </div>
+  </section>
+
+  <section class="carousel" id="Développement">
+    <div class="titre">
+      <h2 class="titre_dev">Développement</h2>
       <div class="surligne"></div>
-        <h2 class="propos-titre">À propos</h2>
-      
-      
-        <p class="propos">
-          Depuis mon plus jeune âge je suis passionnée par la création, je découvre cette année, les joies du développement web. <br>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="grid carousel-item active">
+          <div class="rangement">
+            {% for project in site.developpement %} {% assign slug =
+            project.title | slugify: 'latin' %}
 
-Je suis étudiante en But des Métiers du Multimédia et de l'Internet. Et je recherche un stage, qui débuterait le 22 mai. Curieuse de découvrir de nouvelles compétences, j'aimerais développer mes connaissances en programmation front-end.
-        </p>
-      
-      <div class="logo-language">
-        <img src="/svg/scratch-logo.svg" class="logoimg" alt="scratch">
-        <img src="/svg/php-1.svg" class="logoimg" alt ="php">
-        <img src="/svg/python-5.svg" class="logoimg" alt="python">
-        <img src="/svg/html-1.svg" class="logoimg"  alt="html">
-        <img src="/svg/css-3.svg" class="logoimg" alt="css">
-        <img src="/svg/javascript-1.svg" class="logoimg" alt="javascript">
-      </div>
-    </section>
-
-    <section class="carousel " id="Développement">
-      <div class="titre">
-        <h2 class="titre_dev"> Développement  </h2>
-        <div class="surligne"></div>
-      </div>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="grid carousel-item active">
-            <div class="rangement">
-              {% for project in site.developpement %}
-                {% assign slug = project.title | slugify: 'latin' %}
-             
-                <div class="espacement">
-                  <img src="{{project.image-url}}" class="image-project"  alt="Image du projet"> 
-                  <h3 class="ffGotham">{{project.title}}</h3>
-                  <div class="align-logo">
-                    {% for logo in project.logos %}
-                      <img src="{{logo.logo.url}}" class="logo-dev" alt="{{logo.logo.alt}}">
-                      {% endfor %}
-                    </div>
-                  <br>
-                  <div class="align">
-                    
-                    <a href="/developpement/{{slug}}"><p>voir plus</p></a>
-                    <div class="sous-ligne"></div>
-                  </div>
-                </div>
-          
-              {% endfor %}
-              
+            <div class="espacement">
+              <img
+                src="{{project.image-url}}"
+                class="image-project"
+                alt="Image du projet"
+              />
+              <h3 class="ffGotham">{{project.title}}</h3>
+              <div class="align-logo">
+                {% for logo in project.logos %}
+                <img
+                  src="{{logo.logo.url}}"
+                  class="logo-dev"
+                  alt="{{logo.logo.alt}}"
+                />
+                {% endfor %}
+              </div>
+              <br />
+              <div class="align">
+                <a href="/developpement/{{slug}}"><p>voir plus</p></a>
+                <div class="sous-ligne"></div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
-          </div>
-          <div class="carousel-item">
-            <!--<img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
+
+            {% endfor %}
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
+        </div>
+        <div class="carousel-item">
+          <!--<img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
+        </div>
       </div>
-</section>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
+  <section class="carousel" id="Graphismes">
+    <div class="titre">
+      <h2 class="titre_dev">Graphismes</h2>
+      <div class="surligne sur-gra"></div>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="grid carousel-item active">
+          <div class="rangement">
+            {% for project in site.dessins %} {% assign slug = project.title |
+            slugify: 'latin' %}
 
-<section class="carousel" id="Graphismes">
-  <div class="titre">
-    <h2 class="titre_dev "> Graphismes  </h2>
-    <div class="surligne sur-gra"></div>
-  </div>
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="grid carousel-item active">
-        <div class="rangement">
-          {% for project in site.dessins %}
-            {% assign slug = project.title | slugify: 'latin' %}
-         
             <div class="espacement">
-              <img src="{{project.image-url}}" class="image-project"  alt="Image du projet"> 
-                  
-                
-              <br>
+              <img
+                src="{{project.image-url}}"
+                class="image-project"
+                alt="Image du projet"
+              />
+
+              <br />
               <div class="align">
                 <a href="/dessins/{{slug}}"><p>voir plus</p></a>
                 <div class="sous-ligne"></div>
               </div>
             </div>
-      
-          {% endfor %}
-          
+
+            {% endfor %}
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
+        </div>
+        <div class="carousel-item">
+          <!-- <img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
         </div>
       </div>
-      <div class="carousel-item">
-        <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
-      </div>
-      <div class="carousel-item">
-         <!-- <img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
-      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
+  </section>
 
+  <section class="carousel" id="Mes-Vidéos-photographies">
+    <div class="titre">
+      <h2 class="titre_dev">Mes Vidéos/photographies</h2>
+      <div class="surligne sur-vid"></div>
+    </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="grid carousel-item active">
+          <div class="rangement">
+            {% for project in site.photos-videos %} {% assign slug =
+            project.title | slugify: 'latin' %}
 
-
-<section class="carousel" id="Mes-Vidéos-photographies">
-  <div class="titre">
-    <h2 class="titre_dev"> Mes Vidéos/photographies  </h2>
-    <div class="surligne sur-vid"></div>
-  </div>
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="grid carousel-item active">
-        <div class="rangement">
-          {% for project in site.photos-videos %}
-            {% assign slug = project.title | slugify: 'latin' %}
-         
             <div class="espacement">
-              <img src="{{project.image-url}}" class="image-project"  alt="Image du projet"> 
+              <img
+                src="{{project.image-url}}"
+                class="image-project"
+                alt="Image du projet"
+              />
               <h3 class="ffGotham">{{project.title}}</h3>
               <p>{{project.outil}}</p>
-                
-                  <img src="{{logo.logo.url}}" class="logo-dev" alt="{{logo.logo.alt}}">
-                  
-                
-              <br>
+
+              <img
+                src="{{logo.logo.url}}"
+                class="logo-dev"
+                alt="{{logo.logo.alt}}"
+              />
+
+              <br />
               <div class="align">
                 <a href="/photos-videos/{{slug}}"><p>voir plus</p></a>
                 <div class="sous-ligne"></div>
               </div>
             </div>
-      
-          {% endfor %}
-          
+
+            {% endfor %}
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
+        </div>
+        <div class="carousel-item">
+          <!-- <img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
         </div>
       </div>
-      <div class="carousel-item">
-        <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
-      </div>
-      <div class="carousel-item">
-         <!-- <img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
-      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" >
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" >
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</section>
+  </section>
+</main>
 
-
-
-
-  
-  </main>
-
-  {% include sections/footer.html %}
-  <div id="wcb" class="carbonbadge fond-footer-part2"></div>
-  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+{% include sections/footer.html %}
+<div id="wcb" class="carbonbadge fond-footer-part2"></div>
+<script
+  src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+  defer
+></script>
