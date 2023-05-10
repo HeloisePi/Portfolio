@@ -1,47 +1,44 @@
 <header class="header ffGotham bgBlack txtWhite">
-  <a href="/" >
-    <img src="/assets/logo/logo.svg" class="logo" alt="logo close-menu">
+  <a href="/">
+    <img src="/assets/logo/logo.svg" class="logo" alt="logo close-menu" />
   </a>
-  
-  <div class="container contenantheader"   >
+
+  <div class="container contenantheader">
     <a href="/#Développement ">
       <p class="developpements close-menu">Développements</p>
     </a>
-    
-    <a href="/#Graphismes"   >
+
+    <a href="/#Graphismes">
       <p class="graphismes close-menu">Graphismes</p>
     </a>
 
-    <a href="/#Mes-Vidéos-photographies"   >
+    <a href="/#Mes-Vidéos-photographies">
       <p class="videos close-menu">Vidéos/Photographies</p>
     </a>
 
-    
-    <a href="/assets/cv/cv.pdf"   >
+    <a href="/assets/cv/cv.pdf">
       <p class="cv close-menu">CV</p>
     </a>
-    
-    <a href="/contact"   >
+
+    <a href="/contact">
       <p class="contact close-menu">Contact</p>
     </a>
   </div>
-  <img src="/assets/burger/hamburger.svg" alt="Menu" class="menu">
+  <img src="/assets/burger/hamburger.svg" alt="Menu" class="menu" />
 </header>
 
 <script>
-        const header = document.querySelector(".header")
-        const menu = document.querySelector(".menu")
-        const contenantheader = document.querySelector(".contenantheader")
-        var a = document.querySelectorAll(".contenantheader a")
+  const header = document.querySelector(".header");
+  const menu = document.querySelector(".menu");
+  const contenantheader = document.querySelector(".contenantheader");
+  var a = document.querySelectorAll(".contenantheader a");
 
-        header.addEventListener('click',(e)=>{
-          if(e.target.classList.contains('menu')){
-            contenantheader.classList.toggle('mobile-menu')
-          }
-          if(e.target.classList.contains('close-menu')){
-            contenantheader.classList.remove('mobile-menu')
-          }
-
-        })
+  header.addEventListener("click", (e) => {
+    if (e.target.classList.contains("menu")) {
+      contenantheader.classList.toggle("mobile-menu");
+    }
+    if (e.target.classList.contains("close-menu")) {
+      contenantheader.classList.remove("mobile-menu");
+    }
+  });
 </script>
-
