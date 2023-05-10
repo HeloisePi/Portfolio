@@ -26,6 +26,8 @@ permalink: "/"
       <img src="/svg/html-1.svg" class="logoimg" alt="html" />
       <img src="/svg/css-3.svg" class="logoimg" alt="css" />
       <img src="/svg/javascript-1.svg" class="logoimg" alt="javascript" />
+      <img src="/svg/astro.png" alt="astro">
+      <img src="/svg/svelte.png" alt="svelte">
     </div>
   </section>
 
@@ -34,10 +36,10 @@ permalink: "/"
       <h2 class="titre_dev">Développement</h2>
       <div class="surligne"></div>
     </div>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="grid carousel-item active">
-          <div class="rangement">
+
+
+
+      <div class="rangement">
             {% for project in site.developpement %} {% assign slug =
             project.title | slugify: 'latin' %}
 
@@ -67,32 +69,6 @@ permalink: "/"
             {% endfor %}
           </div>
         </div>
-        <div class="carousel-item">
-          <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
-        </div>
-        <div class="carousel-item">
-          <!--<img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
   </section>
 
   <section class="carousel" id="Graphismes">
@@ -100,9 +76,9 @@ permalink: "/"
       <h2 class="titre_dev">Graphismes</h2>
       <div class="surligne sur-gra"></div>
     </div>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="grid carousel-item active">
+
+
+
           <div class="rangement">
             {% for project in site.dessins %} {% assign slug = project.title |
             slugify: 'latin' %}
@@ -124,42 +100,16 @@ permalink: "/"
             {% endfor %}
           </div>
         </div>
-        <div class="carousel-item">
-          <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
-        </div>
-        <div class="carousel-item">
-          <!-- <img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
 
+  </section>
   <section class="carousel" id="Mes-Vidéos-photographies">
     <div class="titre">
       <h2 class="titre_dev">Mes Vidéos/photographies</h2>
       <div class="surligne sur-vid"></div>
     </div>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="grid carousel-item active">
+
+
+
           <div class="rangement">
             {% for project in site.photos-videos %} {% assign slug =
             project.title | slugify: 'latin' %}
@@ -189,33 +139,7 @@ permalink: "/"
             {% endfor %}
           </div>
         </div>
-        <div class="carousel-item">
-          <!-- <img src="/assets/photo/test/2.webp" class="d-block w-100" alt="..."> -->
-        </div>
-        <div class="carousel-item">
-          <!-- <img src="/assets/photo/test/3.jpg" class="d-block w-100" alt="..."> -->
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExample"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
+       </section>
 </main>
 
 {% include sections/footer.html %}
