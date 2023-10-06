@@ -1,5 +1,5 @@
 ---
-title: Interactive Card 
+title: InteractiveCard 
 image-url: "/assets/photo/dev/interactiveCard.png"
 logos:
     - logo : 
